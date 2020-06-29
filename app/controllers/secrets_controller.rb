@@ -1,12 +1,8 @@
 class SecretsController < ApplicationController
   before_action :require_logged_in
   
-  def create
-    if !params[:name] || params[:name] == ""
-      redirect_to(controller: 'sessions', action: 'new')
-    else
-      session[:name] = params[:name]
-      redirect_to controller: 'application', action: 'index'
-    end
+  def show
   end
+  
+  
 end
