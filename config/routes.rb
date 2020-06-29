@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get '/secret' => 'secrets#show'
   get '/session' => 'sessions#new'
   get '/session' => 'sessions#create'
+  get '/session' => 'sessions#destroy'
   get '/application' => 'application#index'
 end
