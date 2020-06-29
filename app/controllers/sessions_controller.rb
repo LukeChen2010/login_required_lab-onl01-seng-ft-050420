@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  
   def create
     if !params[:name] || params[:name] == ""
       redirect_to(controller: 'sessions', action: 'new')
@@ -7,4 +8,5 @@ class SessionsController < ApplicationController
       redirect_to controller: 'application', action: 'index'
     end
   end
+  
 end
